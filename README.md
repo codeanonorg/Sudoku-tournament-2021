@@ -8,7 +8,7 @@ Tout le monde, membre ou non de l'association, est invité à participer !
 Le tournoi se déroulera du **1er Mai 2021** au **1er Juin 2021** inclus. Dés le **2 juin** toutes les soumissions seront collectées et les résultats seront communiqués le soir. Les soumissions seront évaluées selon plusieurs critères :
 
 1. **Performance**: la vitesse de votre programme sera évaluée sur plusieurs grilles de sudoku de différentes difficultés
-2. **Originialité**: l'originalité de votre méthode de résolution sera également jugée, n'hésitez pas à innover !
+2. **Originalité**: l'originalité de votre méthode de résolution sera également jugée, n'hésitez pas à innover !
 3. **Qualité du code**: bien sûr, la qualité et la fiabilité du code sera également évaluée.
 
 Un gagnant sera annoncé pour **chaque catégorie**. Les 3 gagnants se verront attribuer un badge spéciale sur notre **[serveur discord](https://codeanon.org/discord/)**
