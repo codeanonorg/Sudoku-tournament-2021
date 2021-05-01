@@ -54,7 +54,7 @@ Voici un exemple de grille :
 
 ## Inscription
 
-Les inscriptions au tournois ne sont pas encore ouvertes mais cela ne saurait tarder ! N'hésitez pas à commencer dés à présent.
+Le formulaire d'inscription se trouve à [cette adresse](https://forms.gle/dazkNZcMjmM6g4Ag9).
 Pour toute question, n'hésitez pas à contacter le bureau de l'association via le **[serveur discord](https://codeanon.org/discord)**
 
 Bonne chance à tous !
