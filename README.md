@@ -46,6 +46,15 @@ Voici un exemple de grille :
 ? 8 ? ? 4 ? ? ? ?
 ```
 
+## Vérifiez que votre soumission est correcte
+
+Afin de vérifiez que votre soumission respecte les règles, vous pouvez suivre la procédure suivante :
+
+1. clonez ce dépôt git (`git clone https://codeanonorg/Sudoku-tournament-2021.git`)
+2. placez vous dans le répertoire (`cd ./Sudoku-tournament-2021.git`)
+3. copiez-y les fichiers de votre soumissions
+4. exécutez la commande `./test`
+
 ## Evaluation des soumissions
 
 + Vos soumissions seront évaluées uniquement sur des grilles de sudoku **valides** (qui admettent une solution).
