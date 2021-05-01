@@ -1,7 +1,7 @@
 # Tournoi de résolution de sudoku 2021
 
-L'association CodeAnon organise un tournoi de résolution automatique de Sudoku cette année ! L'objectif de ce tournoi et de proposer un (ou plusieurs) programme(s) de résolution de Sudoku.
-Tout le monde, membre ou non de l'association est invité à participer !
+L'association CodeAnon organise un tournoi de résolution automatique de Sudoku cette année ! L'objectif de ce tournoi est de proposer un (ou plusieurs) programme(s) de résolution de Sudoku.
+Tout le monde, membre ou non de l'association, est invité à participer !
 
 ## Déroulement du tournoi
 
