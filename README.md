@@ -17,11 +17,11 @@ Un gagnant sera annoncé pour **chaque catégorie**. Les 3 gagnants se verront a
 ## Consignes de soumission
 
 Vous devez fournir une archive contenant au moins un programme exécutable en respectant les consignes suivantes :
-+ Le programme sera écris dans **le langage de votre choix**
++ Le programme sera écrit dans **le langage de votre choix**
 + Le programme doit pouvoir s'exécuter sur un système UNIX (Ubuntu par exemple)
 + Le programme exécutable sera nommé `solver`
-+ Si le programme est écris dans un langage compilé, l'archive doit absolument contenir un fichier `Makefile` de sorte qu'en tapant la commande `make solver`, l'executable `solver` soit compilé
-+ Si le programme est écris dans un langage interprété, assurez vous que le programme soit exécutable simplement en tapant la commande `./solver`
++ Si le programme est écrit dans un langage compilé, l'archive doit absolument contenir un fichier `Makefile` de sorte qu'en tapant la commande `make solver`, l'executable `solver` soit compilé
++ Si le programme est écrit dans un langage interprété, assurez vous que le programme soit exécutable simplement en tapant la commande `./solver`
 + Votre programme ne prendra aucun paramètres et se contentera de lire une grille de sudoku sur l'entrée standard UNIX (*stdin*) et d'écrire la grille complétée sur la sortie standard UNIX (*stdout*).
   
 ## Format des grilles
