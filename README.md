@@ -28,22 +28,22 @@ Vous devez fournir une archive contenant au moins un programme exécutable en re
 
 + Les grilles de sudoku seront données sous la forme de 9 lignes de 9 entiers séparés par des espaces.
 + Chaque ligne est terminée par le symbole `\n` (y compris la **dernière**)
-+ Les cases blanches dans une grille seront représenté par le symbole `?`
++ Les cases blanches dans une grille seront représenté par l'entier `0`
   
 Votre programme devra fournir une unique réponse **complète** et **valide** qui respecte ce format
 
 Voici un exemple de grille :
 
 ```
-? 6 ? ? 5 ? ? ? ?
-? ? ? ? ? ? 8 4 ?
-? 5 3 ? ? ? ? ? ?
-1 ? ? 9 ? ? ? ? 6
-? ? 6 3 ? 8 ? ? 7
-8 ? ? 6 ? ? ? ? 4
-? 7 1 ? ? ? ? ? ?
-? ? ? ? ? ? 3 9 ?
-? 8 ? ? 4 ? ? ? ?
+0 6 0 0 5 0 0 0 0
+0 0 0 0 0 0 8 4 0
+0 5 3 0 0 0 0 0 0
+1 0 0 9 0 0 0 0 6
+0 0 6 3 0 8 0 0 7
+8 0 0 6 0 0 0 0 4
+0 7 1 0 0 0 0 0 0
+0 0 0 0 0 0 3 9 0
+0 8 0 0 4 0 0 0 0
 ```
 
 ## Vérifiez que votre soumission est correcte
