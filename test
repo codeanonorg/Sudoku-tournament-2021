@@ -43,7 +43,7 @@ def for_all(test, iter):
 def check_from(grid, base):
     for i in range(9):
         for j in range(9):
-            if grid[i][j] != base[i][j] and grid[i][j] != 0:
+            if grid[i][j] != base[i][j] and base[i][j] != 0:
                 return False
     return True
 
@@ -75,14 +75,19 @@ def blocks(grid):
 
 def check_grid(grid, base):
     if not check_shape(grid):
+        print('[KO] -> shape not ok')
         return False
     if not check_from(grid, base):
+        print('[KO] -> grid has changed')
         return False
     if not for_all(check_constraints, grid):
+        print('[KO] -> constraints (rows) not ok')
         return False
     if not for_all(check_constraints, cols(grid)):
+        print('[KO] -> constraints (cols) not ok')
         return False
     if not for_all(check_constraints, blocks(grid)):
+        print('[KO] -> constraints (blocks) not ok')
         return False
     return True
 
