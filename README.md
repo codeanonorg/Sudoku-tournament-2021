@@ -28,7 +28,7 @@ Vous devez fournir une archive contenant au moins un programme exécutable en re
 
 + Les grilles de sudoku seront données sous la forme de 9 lignes de 9 entiers séparés par des espaces.
 + Chaque ligne est terminée par le symbole `\n` (y compris la **dernière**)
-+ Les cases blanches dans une grille seront représenté par l'entier `0`
++ Les cases blanches dans une grille seront représentées par l'entier `0`
   
 Votre programme devra fournir une unique réponse **complète** et **valide** qui respecte ce format
 
