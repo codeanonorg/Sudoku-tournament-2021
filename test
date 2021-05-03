@@ -1,14 +1,14 @@
 #! /usr/bin/python3
 
 """
-    Ce script permet aux participants de vérifier que leur soumission 
+    Ce script permet aux participants de vérifier que leur soumission
     est conforme aux consignes.
 
     Pour lancer la vérification, désarchivez votre soumission dans le dossier
     courant et tapez la commande "./test" ou "python3 test".
 
-    Si la commande de test affiche OK, votre soumission est correcte est résout avec
-    succès la grille de sudoku "grid.txt". Sinon, la commande test signale une erreure.
+    Si la commande de test affiche OK, votre soumission est correcte et résout avec
+    succès la grille de sudoku "grid.txt". Sinon, la commande test signale une erreur.
 """
 
 from os import system, path, access, X_OK
@@ -18,16 +18,19 @@ def load_grid(file):
     grid = []
     with open(file, "r") as f:
         for line in f:
-            grid.append(list(map(int, line.split(sep=" "))))
+            grid.append(list(map(int, line.strip().split(sep=" "))))
     return grid
 
 
 def print_grid(grid):
-    def vline(): print('-'*21, end='\n')
-    def triple(i, k): return " ".join([grid[i][k + j] for j in range(3)])
+    def vline():
+        print("-" * 21, end="\n")
+
+    def triple(i, k):
+        return " ".join([str(grid[i][k + j]) for j in range(3)])
 
     for i in range(9):
-        if (i % 3 == 0):
+        if i % 3 == 0:
             vline()
         print(" | ".join([triple(i, k) for k in range(0, 9, 3)]))
     vline()
@@ -68,58 +71,64 @@ def blocks(grid):
     blocks = []
     for i in range(0, 3):
         for j in range(0, 3):
-            blocks.append([grid[m][n] for n in range(j*3, j*3 + 3)
-                           for m in range(i*3, i*3 + 3)])
+            blocks.append(
+                [
+                    grid[m][n]
+                    for n in range(j * 3, j * 3 + 3)
+                    for m in range(i * 3, i * 3 + 3)
+                ]
+            )
     return blocks
 
 
 def check_grid(grid, base):
     if not check_shape(grid):
-        print('[KO] -> shape not ok')
+        print("[KO] -> shape not ok")
         return False
     if not check_from(grid, base):
-        print('[KO] -> grid has changed')
+        print("[KO] -> grid has changed")
         return False
     if not for_all(check_constraints, grid):
-        print('[KO] -> constraints (rows) not ok')
+        print("[KO] -> constraints (rows) not ok")
         return False
     if not for_all(check_constraints, cols(grid)):
-        print('[KO] -> constraints (cols) not ok')
+        print("[KO] -> constraints (cols) not ok")
         return False
     if not for_all(check_constraints, blocks(grid)):
-        print('[KO] -> constraints (blocks) not ok')
+        print("[KO] -> constraints (blocks) not ok")
         return False
     return True
 
 
 def test():
-    print('Looking for makefile')
+    print("Looking for makefile")
     if path.exists("./Makefile"):
-        print('[OK] -> executing the makefile')
+        print("[OK] -> executing the makefile")
         if 0 != system("make solver &> make_log"):
-            print('[KO] -> error during the execution (see make_log for details)')
-            exit(1)
-    print('[OK] -> no make file found')
-    print('Looking for the solver')
-    if path.exists("./solver"):
-        print('[OK] -> solver found')
-        if not access("./solver", X_OK):
-            print('[KO] -> solver is not executable')
+            print("[KO] -> error during the execution (see make_log for details)")
             exit(1)
     else:
-        print('[KO] -> solver not found')
+        print("[OK] -> no make file found")
+    print("Looking for the solver")
+    if path.exists("./solver"):
+        print("[OK] -> solver found")
+        if not access("./solver", X_OK):
+            print("[KO] -> solver is not executable")
+            exit(1)
+    else:
+        print("[KO] -> solver not found")
         exit(1)
-    print('Testing the solver')
-    print('[OK] -> executing the solver')
+    print("Testing the solver")
+    print("[OK] -> executing the solver")
     if 0 != system("./solver 2> solver_log < grid.txt > tmp.txt"):
-        print('[KO] -> error during the execution (see solver_log for details)')
+        print("[KO] -> error during the execution (see solver_log for details)")
         exit(1)
     A = load_grid("./grid.txt")
     T = load_grid("./tmp.txt")
     if check_grid(T, A):
-        print('[OK] -> the solver successfully solved grid_sol.txt')
+        print("[OK] -> the solver successfully solved grid_sol.txt")
     else:
-        print('[K0] -> the solver failed at solving grid_sol.txt')
+        print("[KO] -> the solver failed at solving grid_sol.txt")
         exit(1)
 
 
