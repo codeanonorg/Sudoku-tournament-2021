@@ -51,7 +51,7 @@ Voici un exemple de grille :
 Afin de vérifiez que votre soumission respecte les règles, vous pouvez suivre la procédure suivante :
 
 1. clonez ce dépôt git (`git clone https://codeanonorg/Sudoku-tournament-2021.git`)
-2. placez vous dans le répertoire (`cd ./Sudoku-tournament-2021.git`)
+2. placez vous dans le répertoire (`cd ./Sudoku-tournament-2021`)
 3. copiez-y les fichiers de votre soumissions
 4. exécutez la commande `./test`
 
