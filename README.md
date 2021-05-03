@@ -46,14 +46,13 @@ Voici un exemple de grille :
 0 8 0 0 4 0 0 0 0
 ```
 
-## Vérifiez que votre soumission est correcte
+## Inscription et soumission
 
-Afin de vérifiez que votre soumission respecte les règles, vous pouvez suivre la procédure suivante :
+Pour participer au tournoi, vous devez avoir un compte **[github](https://github.com)** afin de pouvoir soumettre votre programme. Nous utilisons [**github classroom**](https://classroom.github.com) pour évaluer les soumissions.
 
-1. clonez ce dépôt git (`git clone https://github.com/codeanonorg/Sudoku-tournament-2021.git`)
-2. placez vous dans le répertoire (`cd ./Sudoku-tournament-2021`)
-3. copiez-y les fichiers de votre soumissions
-4. exécutez la commande `./test`
+L'inscription se fait à cette [**adresse**](https://classroom.github.com/a/4BaLyANK) ! après avoir cliqué sur le lien, un dépôt git à votre nom sera automatiquement créé et configuré pour vous permettre d'y placer votre code. Si vous avez besoin d'aide pour effectuer votre inscription, n'hésitez pas à nous contacter via [**discord**](https://codeanon.org/discord) ;).
+
+A chaque fois que vous mettez à jour votre soumission, un test de conformité est effectué afin de vous indiquer si votre soumission respecte les consignes ou non.
 
 ## Evaluation des soumissions
 
@@ -61,9 +60,7 @@ Afin de vérifiez que votre soumission respecte les règles, vous pouvez suivre 
 + Vos soumissions seront testées sur plusieurs grilles de difficultés variables
 + Si votre programme donne une réponse invalide pour l'une des grilles de test, celle-ci ne sera pas prise en compte. En revanche, cela n'affectera pas votre score sur les autres grilles de tests.
 
-## Inscription
 
-Le formulaire d'inscription se trouve à [cette adresse](https://forms.gle/dazkNZcMjmM6g4Ag9).
 Pour toute question, n'hésitez pas à contacter le bureau de l'association via le **[serveur discord](https://codeanon.org/discord)**
 
 Bonne chance à tous !
