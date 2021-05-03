@@ -18,7 +18,7 @@ def load_grid(file):
     grid = []
     with open(file, "r") as f:
         for line in f:
-            grid.append(list(map(int, line.split(sep=" "))))
+            grid.append(list(map(int, line.strip().split(sep=" "))))
     return grid
 
 
