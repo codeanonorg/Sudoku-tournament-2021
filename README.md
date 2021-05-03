@@ -52,7 +52,18 @@ Pour participer au tournoi, vous devez avoir un compte **[github](https://github
 
 L'inscription se fait à cette [**adresse**](https://classroom.github.com/a/4BaLyANK) ! après avoir cliqué sur le lien, un dépôt git à votre nom sera automatiquement créé et configuré pour vous permettre d'y placer votre code. Si vous avez besoin d'aide pour effectuer votre inscription, n'hésitez pas à nous contacter via [**discord**](https://codeanon.org/discord) ;).
 
-A chaque fois que vous mettez à jour votre soumission, un test de conformité est effectué afin de vous indiquer si votre soumission respecte les consignes ou non.
+A chaque fois que vous mettez à jour votre soumission, un test de conformité est effectué afin de vous indiquer si votre programme respecte les consignes ou non.
+
+## Langages disponibles et environnement
+
+Les tests de conformité ainsi que l'évaluation des soumissions sont fait sous la dernière version d'`ubuntu` avec les paquets suivants installés :
+
++ `ocaml`, `opam`
++ `rustc`, `cargo`
++ `python3.9`
++ `clang`, `gcc`
+
+Si vous utilisez des outils non listés ci-dessus, merci de rajouter les instructions nécessaires à leur installation dans votre `Makefile`.
 
 ## Evaluation des soumissions
 
