@@ -23,13 +23,13 @@ Vous devez fournir une archive contenant au moins un programme exécutable en re
 + Si le programme est écrit dans un langage compilé, l'archive doit absolument contenir un fichier `Makefile` de sorte qu'en tapant la commande `make solver`, l'executable `solver` soit compilé
 + Si le programme est écrit dans un langage interprété, assurez vous que le programme soit exécutable simplement en tapant la commande `./solver`
 + Votre programme ne prendra aucun paramètres et se contentera de lire une grille de sudoku sur l'entrée standard UNIX (*stdin*) et d'écrire la grille complétée sur la sortie standard UNIX (*stdout*).
-  
+
 ## Format des grilles
 
 + Les grilles de sudoku seront données sous la forme de 9 lignes de 9 entiers séparés par des espaces.
 + Chaque ligne est terminée par le symbole `\n` (y compris la **dernière**)
 + Les cases blanches dans une grille seront représentées par l'entier `0`
-  
+
 Votre programme devra fournir une unique réponse **complète** et **valide** qui respecte ce format
 
 Voici un exemple de grille :
@@ -50,7 +50,7 @@ Voici un exemple de grille :
 
 Afin de vérifiez que votre soumission respecte les règles, vous pouvez suivre la procédure suivante :
 
-1. clonez ce dépôt git (`git clone https://codeanonorg/Sudoku-tournament-2021.git`)
+1. clonez ce dépôt git (`git clone https://github.com/codeanonorg/Sudoku-tournament-2021.git`)
 2. placez vous dans le répertoire (`cd ./Sudoku-tournament-2021`)
 3. copiez-y les fichiers de votre soumissions
 4. exécutez la commande `./test`
@@ -67,5 +67,3 @@ Le formulaire d'inscription se trouve à [cette adresse](https://forms.gle/dazkN
 Pour toute question, n'hésitez pas à contacter le bureau de l'association via le **[serveur discord](https://codeanon.org/discord)**
 
 Bonne chance à tous !
-
-
